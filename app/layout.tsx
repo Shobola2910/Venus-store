@@ -3,14 +3,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Venus Store",
-  description: "Venus Store web app",
+  description: "Zamonaviy va nafis ro‘mollar do‘koni"
 };
 
 export default function RootLayout({
-  children,
-}: {
+  children
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="uz">
       <body>{children}</body>
